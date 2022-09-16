@@ -22,9 +22,20 @@ func main() {
 	fmt.Println(kdv2)
 
 	//değişken tanımlamanın bir başka yolu
-	kdv3 := 53.55
+	kdv3 := 53.55 // go dilinde en çok kullanılan değişken tanımlama tipidir.
 	fmt.Println(kdv3)
 
-	fmt.Printf("Veri Tipi: %T", kdv3) // değişkenin veri tipini öğrenme
+	fmt.Printf("Veri Tipi: %T\n", kdv3) // değişkenin veri tipini öğrenme \n=yeni bir satır.
+
+	var durum bool = true
+
+	var metin1 string = "Arif"
+	var metin2 string = "Cahit"
+
+	// = değer atama işlemi yapar
+	// == ?
+	durum = metin1 == metin2 // metin1 metin2 ye eşit mi
+
+	fmt.Println(durum)
 
 }
