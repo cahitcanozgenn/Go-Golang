@@ -12,5 +12,5 @@ func main() {
 	//conditionals.Demo2()
 	//conditionals.Demo3()
 	//loops.Demo2()
-	array.Demo3()
+	array.Demo4()
 }
