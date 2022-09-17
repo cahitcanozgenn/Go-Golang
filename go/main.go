@@ -2,7 +2,10 @@ package main // dosyayı hangi klasöre yerleştireceğimizi belirliyoruz.
 // fmt paketini kullanmak için projemize import ediyoruz.
 //"golesson/conditionals"
 //"golesson/loops"
-import "golesson/slices"
+import (
+	"fmt"
+	"golesson/functions"
+)
 
 //"golesson/variables"
 
@@ -12,5 +15,6 @@ func main() {
 	//conditionals.Demo3()
 	//loops.Demo2()
 	//array.Demo4()
-	slices.Demo2()
+	var sonuc = functions.Topla(1, 3)
+	fmt.Println(sonuc)
 }
