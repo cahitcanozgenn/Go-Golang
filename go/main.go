@@ -2,12 +2,11 @@ package main // dosyayı hangi klasöre yerleştireceğimizi belirliyoruz.
 // fmt paketini kullanmak için projemize import ediyoruz.
 //"golesson/conditionals"
 //"golesson/loops"
+
 import (
 	"fmt"
 	"golesson/functions"
 )
-
-//"golesson/variables"
 
 func main() {
 	//variables.Demo1()
@@ -16,9 +15,17 @@ func main() {
 	//loops.Demo2()
 	//array.Demo4()
 
-	sonuc1, sonuc2, sonuc3, sonuc4 := functions.DortIslem(10, 6)
-	fmt.Println("Toplam: ", sonuc1)
-	fmt.Println("Çıkarım: ", sonuc2)
-	fmt.Println("Çarpım: ", sonuc3)
-	fmt.Println("Bölüm: ", sonuc4)
+	//ctrl k ctrl c comment
+	// sonuc1, sonuc2, sonuc3, sonuc4 := functions.DortIslem(10, 6)
+	// fmt.Println("Toplam: ", sonuc1)
+	// fmt.Println("Çıkarım: ", sonuc2)
+	// fmt.Println("Çarpım: ", sonuc3)
+	// fmt.Println("Bölüm: ", sonuc4)
+
+	fmt.Println((functions.ToplaVariadic(1, 4, 6)))
+	fmt.Println((functions.ToplaVariadic(1, 4, 6, 3, 6, 5)))
+
+	numbers := []int{4, 5, 69, 36}
+	fmt.Println((functions.ToplaVariadic(numbers...)))
+
 }
