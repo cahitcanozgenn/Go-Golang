@@ -35,6 +35,6 @@ func main() {
 	// sayilar := []int{1, 2, 3}
 	// pointers.Demo2(sayilar)
 	// fmt.Println("Maindeki Sayı: ", sayilar[0])
-	structs.Demo1()
+	structs.Demo2()
 
 }
