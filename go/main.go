@@ -6,7 +6,7 @@ package main // dosyayı hangi klasöre yerleştireceğimizi belirliyoruz.
 import (
 	"fmt"
 	"golesson/functions"
-	"golesson/pointers"
+	"golesson/structs"
 )
 
 func main() {
@@ -32,8 +32,9 @@ func main() {
 	// pointers.Demo2()
 	// fmt.Println("Maindeki Sayı: ", sayi)
 
-	sayilar := []int{1, 2, 3}
-	pointers.Demo2(sayilar)
-	fmt.Println("Maindeki Sayı: ", sayilar[0])
+	// sayilar := []int{1, 2, 3}
+	// pointers.Demo2(sayilar)
+	// fmt.Println("Maindeki Sayı: ", sayilar[0])
+	structs.Demo1()
 
 }
