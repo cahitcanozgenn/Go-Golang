@@ -6,6 +6,7 @@ package main // dosyayı hangi klasöre yerleştireceğimizi belirliyoruz.
 import (
 	"fmt"
 	"golesson/functions"
+	"golesson/maps"
 )
 
 func main() {
@@ -27,5 +28,6 @@ func main() {
 
 	numbers := []int{4, 5, 69, 36}
 	fmt.Println((functions.ToplaVariadic(numbers...)))
+	maps.Demo1()
 
 }
