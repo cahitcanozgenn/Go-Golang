@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"golesson/channels"
 	"golesson/functions"
+	"golesson/interfaces"
 )
 
 func main() {
@@ -43,4 +44,6 @@ func main() {
 	ciftSayiToplam, tekSayiToplam := <-ciftSayiCn, <-tekSayiCn
 	carpim := ciftSayiToplam * tekSayiToplam
 	fmt.Println(carpim)
+
+	interfaces.Demo1()
 }
