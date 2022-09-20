@@ -5,8 +5,8 @@ package main // dosyayı hangi klasöre yerleştireceğimizi belirliyoruz.
 
 import (
 	"fmt"
-	"golesson/for_range"
 	"golesson/functions"
+	"golesson/pointers"
 )
 
 func main() {
@@ -26,8 +26,14 @@ func main() {
 	fmt.Println((functions.ToplaVariadic(1, 4, 6)))
 	fmt.Println((functions.ToplaVariadic(1, 4, 6, 3, 6, 5)))
 
-	numbers := []int{4, 5, 69, 36}
-	fmt.Println((functions.ToplaVariadic(numbers...)))
-	for_range.Demo3()
+	// numbers := []int{4, 5, 69, 36}
+	// fmt.Println((functions.ToplaVariadic(numbers...)))
+	// sayi := 5
+	// pointers.Demo2()
+	// fmt.Println("Maindeki Sayı: ", sayi)
+
+	sayilar := []int{1, 2, 3}
+	pointers.Demo2(sayilar)
+	fmt.Println("Maindeki Sayı: ", sayilar[0])
 
 }
