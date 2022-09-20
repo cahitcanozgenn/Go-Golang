@@ -5,9 +5,8 @@ package main // dosyayı hangi klasöre yerleştireceğimizi belirliyoruz.
 
 import (
 	"fmt"
+	"golesson/channels"
 	"golesson/functions"
-	"golesson/goroutines"
-	"time"
 )
 
 func main() {
@@ -36,8 +35,12 @@ func main() {
 	// sayilar := []int{1, 2, 3}
 	// pointers.Demo2(sayilar)
 	// fmt.Println("Maindeki Sayı: ", sayilar[0])
-	go goroutines.CiftSayilar()
-	go goroutines.TekSayilar()
-	time.Sleep(5 * time.Second)
-	fmt.Println("Bitti")
+	ciftSayiCn := make(chan int)
+	tekSayiCn := make(chan int)
+	go channels.CiftSayilar(ciftSayiCn)
+	go channels.TekSayilar(tekSayiCn)
+	// time.Sleep(5 * time.Second)
+	ciftSayiToplam, tekSayiToplam := <-ciftSayiCn, <-tekSayiCn
+	carpim := ciftSayiToplam * tekSayiToplam
+	fmt.Println(carpim)
 }
