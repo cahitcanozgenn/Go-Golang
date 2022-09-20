@@ -6,7 +6,8 @@ package main // dosyayı hangi klasöre yerleştireceğimizi belirliyoruz.
 import (
 	"fmt"
 	"golesson/functions"
-	"golesson/structs"
+	"golesson/goroutines"
+	"time"
 )
 
 func main() {
@@ -35,6 +36,8 @@ func main() {
 	// sayilar := []int{1, 2, 3}
 	// pointers.Demo2(sayilar)
 	// fmt.Println("Maindeki Sayı: ", sayilar[0])
-	structs.Demo2()
-
+	go goroutines.CiftSayilar()
+	go goroutines.TekSayilar()
+	time.Sleep(5 * time.Second)
+	fmt.Println("Bitti")
 }
