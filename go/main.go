@@ -6,8 +6,7 @@ package main // dosyayı hangi klasöre yerleştireceğimizi belirliyoruz.
 import (
 	"fmt"
 	"golesson/channels"
-	"golesson/error_handling"
-	"golesson/functions"
+	"golesson/interfaces"
 )
 
 func main() {
@@ -24,8 +23,8 @@ func main() {
 	// fmt.Println("Çarpım: ", sonuc3)
 	// fmt.Println("Bölüm: ", sonuc4)
 
-	fmt.Println((functions.ToplaVariadic(1, 4, 6)))
-	fmt.Println((functions.ToplaVariadic(1, 4, 6, 3, 6, 5)))
+	// fmt.Println((functions.ToplaVariadic(1, 4, 6)))
+	// fmt.Println((functions.ToplaVariadic(1, 4, 6, 3, 6, 5)))
 
 	// numbers := []int{4, 5, 69, 36}
 	// fmt.Println((functions.ToplaVariadic(numbers...)))
@@ -45,5 +44,5 @@ func main() {
 	carpim := ciftSayiToplam * tekSayiToplam
 	fmt.Println(carpim)
 
-	error_handling.Demo1()
+	interfaces.Demo4()
 }
