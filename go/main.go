@@ -6,7 +6,7 @@ package main // dosyayı hangi klasöre yerleştireceğimizi belirliyoruz.
 import (
 	"fmt"
 	"golesson/channels"
-	"golesson/string_functions"
+	"golesson/restful"
 )
 
 func main() {
@@ -44,5 +44,5 @@ func main() {
 	carpim := ciftSayiToplam * tekSayiToplam
 	fmt.Println(carpim)
 
-	string_functions.Demo2()
+	restful.Demo2()
 }
