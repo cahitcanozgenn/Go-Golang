@@ -44,5 +44,15 @@ func main() {
 	carpim := ciftSayiToplam * tekSayiToplam
 	fmt.Println(carpim)
 
-	project.GetAllProducts()
+	product, _ := project.AddProduct()
+	fmt.Println(product)
+	products, _ := project.GetAllProducts()
+
+	for i := 0; i < len(products); i++ {
+		fmt.Println(products[i].ProductName)
+	}
+
+	for i := 1; i <= 10; i = i + 2 {
+		fmt.Println(i)
+	}
 }

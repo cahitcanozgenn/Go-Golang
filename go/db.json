@@ -1,34 +1,62 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "productName": "Kulaklık",
-            "categoryId": 1,
-            "unitPrice": 35
-        },
-        {
-            "id": 2,
-            "productName": "Şarj Kablosu",
-            "categoryId": 1,
-            "unitPrice": 120
-        },
-        {
-            "id": 3,
-            "productName": "Telefon Kılıfı",
-            "categoryId": 1,
-            "unitPrice": 60
-        }
-    ],
-
-    "categories": [
-        {
-            "id": 1,
-            "categoryName": "Bilgisayar"
-        },
-        {
-            "id": 2,
-            "categoryName": "Aksesuar"
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "productName": "Kulaklık",
+      "categoryId": 1,
+      "unitPrice": 35
+    },
+    {
+      "id": 2,
+      "productName": "Şarj Kablosu",
+      "categoryId": 1,
+      "unitPrice": 120
+    },
+    {
+      "id": 3,
+      "productName": "Telefon Kılıfı",
+      "categoryId": 1,
+      "unitPrice": 60
+    },
+    {
+      "id": 4,
+      "productName": "Tablet Kılıfı",
+      "categoryId": 1,
+      "unitPrice": 55
+    },
+    {
+      "id": 5,
+      "productName": "Mikrofon",
+      "categoryId": 1,
+      "unitPrice": 55
+    },
+    {
+      "id": 6,
+      "productName": "Cep Telefonu",
+      "categoryId": 1,
+      "unitPrice": 55
+    },
+    {
+      "id": 7,
+      "productName": "Cep Telefonu Akıllı",
+      "categoryId": 1,
+      "unitPrice": 55
+    },
+    {
+      "id": 8,
+      "productName": "Cep Telefonu Akıllı",
+      "categoryId": 1,
+      "unitPrice": 55
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Bilgisayar"
+    },
+    {
+      "id": 2,
+      "categoryName": "Aksesuar"
+    }
+  ]
 }
-
