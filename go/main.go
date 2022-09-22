@@ -44,5 +44,5 @@ func main() {
 	carpim := ciftSayiToplam * tekSayiToplam
 	fmt.Println(carpim)
 
-	string_functions.Demo1()
+	string_functions.Demo2()
 }
