@@ -6,7 +6,7 @@ package main // dosyayı hangi klasöre yerleştireceğimizi belirliyoruz.
 import (
 	"fmt"
 	"golesson/channels"
-	"golesson/restful"
+	"golesson/project"
 )
 
 func main() {
@@ -44,5 +44,5 @@ func main() {
 	carpim := ciftSayiToplam * tekSayiToplam
 	fmt.Println(carpim)
 
-	restful.Demo2()
+	project.GetAllProducts()
 }

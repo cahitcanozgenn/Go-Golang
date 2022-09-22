@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "productName": "Kulaklık",
+            "categoryId": 1,
+            "unitPrice": 35
+        },
+        {
+            "id": 2,
+            "productName": "Şarj Kablosu",
+            "categoryId": 1,
+            "unitPrice": 120
+        },
+        {
+            "id": 3,
+            "productName": "Telefon Kılıfı",
+            "categoryId": 1,
+            "unitPrice": 60
+        }
+    ],
+
+    "categories": [
+        {
+            "id": 1,
+            "categoryName": "Bilgisayar"
+        },
+        {
+            "id": 2,
+            "categoryName": "Aksesuar"
+        }
+    ]
+}
+
