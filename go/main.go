@@ -6,8 +6,8 @@ package main // dosyayı hangi klasöre yerleştireceğimizi belirliyoruz.
 import (
 	"fmt"
 	"golesson/channels"
+	"golesson/defer_statement"
 	"golesson/functions"
-	"golesson/interfaces"
 )
 
 func main() {
@@ -45,5 +45,5 @@ func main() {
 	carpim := ciftSayiToplam * tekSayiToplam
 	fmt.Println(carpim)
 
-	interfaces.Demo3()
+	defer_statement.Demo3()
 }
